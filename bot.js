@@ -16,6 +16,7 @@ module.exports = function () {
     content_type: 'audio/ogg;codecs=opus',
     continuous: true,
     interim_results: false,
+    model: 'es-ES_BroadbandModel',
   };
 
   var bot = new Bot(config.telegram.token, { polling: true });
