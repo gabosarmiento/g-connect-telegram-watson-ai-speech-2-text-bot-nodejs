@@ -8,5 +8,12 @@
     "start": "node app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.21.1",
+    "watson-developer-cloud": "^1.4.1"
+  },
+  "engines": {
+    "node": "5.10.0"
+  }
 }

@@ -2,6 +2,7 @@
 var http = require('http');
 
 var port = (process.env.PORT || 5000);
+require('./bot.js');
 
 http.createServer(function (req, res) {
   res.writeHead(200, { 'Content-Type': 'application/json' });
