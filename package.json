@@ -1,0 +1,12 @@
+{
+  "name": "speech2textbot",
+  "version": "0.0.1",
+  "description": "\"speech 2 text bot for telegram using nodejs and watson speech 2 text api\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
