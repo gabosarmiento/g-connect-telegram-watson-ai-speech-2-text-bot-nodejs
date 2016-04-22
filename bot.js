@@ -19,6 +19,14 @@ module.exports = function () {
   };
 
   var bot = new Bot(config.telegram.token, { polling: true });
+
+  // Matches /echo [whatever]
+  bot.onText(/\/echo (.+)/, function (msg, match) {
+    var fromId = msg.from.id;
+    var resp = match[1];
+    bot.sendMessage(fromId, resp);
+  });
+
   bot.on('message', function (msg) {
     var property = 'voice';
     if (msg[property]) {
